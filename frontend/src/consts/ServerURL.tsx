@@ -1,1 +1,1 @@
-export const ServerURL = 'http://localhost:5000/scores';
+export const ServerURL = 'https://redux-minesweeper.herokuapp.com/scores';
