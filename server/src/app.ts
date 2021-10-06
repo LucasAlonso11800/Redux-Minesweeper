@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 const connection = mysql.createConnection({
-    database: 'minesweeper',
-    user: 'root',
-    host: 'localhost',
-    password: 'Pulqui123*'
+    host: process.env.dbHost,
+    database: process.env.dbDatabase,
+    user: process.env.dbUser,
+    password: process.env.dbPassword
 });
 
 connection.connect((err) => {
