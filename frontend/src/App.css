@@ -23,6 +23,9 @@
     width: 100%;
     background-color: #FFF;
     box-shadow: 0 0 10px 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .MuiDataGrid-root .MuiDataGrid-columnHeaderTitle{
@@ -40,9 +43,8 @@
     padding: 0.5em;
     padding-top: 4rem;
 }
-a{
-    text-decoration: none;
-    color: #FFF;
+.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
+    font-family: 'Secular One', sans-serif
 }
 .info{
     width: 30%;
@@ -66,12 +68,7 @@ a{
     text-align: center;
     text-shadow: 2px 2px 5px #000;
 }
-.MuiRadio-root{
-    color: #fff!important;
-}
-.MuiTypography-body1{
-    font-family: 'Secular One', sans-serif!important;
-}
+
 .form{
     width: 80%;
     padding: 0.5em
@@ -79,18 +76,9 @@ a{
 .form-title{
     text-align: center;
 }
-.MuiButton-label{
-    text-shadow: none!important;
-}
 .MuiButton-label a {
     color: #000;
     text-decoration: none;
-}
-.MuiPaper-root *{
-    text-shadow: none;
-}
-.MuiPaper-root .MuiButtonBase-root.MuiIconButton-root .MuiIconButton-label a{
-    text-shadow: 2px 2px 5px #000;
 }
 .board-container{
     width: 70%;
