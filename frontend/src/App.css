@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+.score-page__container{
+    width: 750px;
+    margin: 1rem auto 0;
+}
+
+.score-page__buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.score-page__table-container{
+    height: 600px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeaderTitle{
+    font-weight: bold!important;
+}
+
+.container{
+    background-image: url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    color: #fff;
+    min-height: 100vh;
+    margin-top: -4rem;
+    padding: 0.5em;
+    padding-top: 4rem;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px 5px #000;
+
+}
+
+.title{
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+
+}
+
+.subtext{
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.MuiRadio-root{
+    color: #fff!important;
+}
+.MuiTypography-body1{
+    font-family: 'Secular One', sans-serif!important;
+}
+.form{
+    width: 80%;
+    padding: 0.5em
+}
+.form-title{
+    text-align: center;
+}
+.MuiButton-label{
+    text-shadow: none!important;
+}
+.MuiButton-label a {
+    color: #000;
+    text-decoration: none;
+}
+.MuiPaper-root *{
+    text-shadow: none;
+}
+.MuiPaper-root .MuiButtonBase-root.MuiIconButton-root .MuiIconButton-label a{
+    text-shadow: 2px 2px 5px #000;
+}
+.board-container{
+    width: 70%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.board{
+    display: grid;
+    padding: 10px;
+    gap: 4px;
+    background-color: #777;
+}
+
+.board > * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.75rem;
+    border: 2px solid #888;
+    user-select: none;
+}
+
+.board > .hidden{
+    background-color: #ccc;
+    cursor: pointer;    
+}
+
+.board > .mine{
+    background-color: #f00;    
+    background-image: url('./images/mine.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.board > .number{
+    background-color: none;
+}
+
+.board > .marked{
+    background-color: transparent;    
+    background-image: url('./images/flag_icon.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
